@@ -1,6 +1,7 @@
 # C typedef
-C 语言提供了 typedef 关键字，您可以使用它来为类型取一个新的名字。
+C 语言提供了 typedef 关键字，可以使用它来为类型取一个新的名字。
 
+## typedef定义类型
 下面的实例为单字节数字定义了一个术语 BYTE：
 ```
 typedef unsigned char BYTE;
@@ -9,13 +10,13 @@ typedef unsigned char BYTE;
 ``` 
 BYTE  b1, b2;
 ``` 
-按照惯例，定义时会大写字母，以便提醒用户类型名称是一个象征性的缩写，但您也可以使用小写字母，如下：
-``` 
-typedef unsigned char byte;
-``` 
-您也可以使用 typedef 来为用户自定义的数据类型取一个新的名字。例如，您可以对结构体使用 typedef 来定义一个新的数据类型名字，然后使用这个新的数据类型来直接定义结构变量，如下：
+> 建议定义类型时使用大写字母，也可以使用小写字母。
 
-实例
+
+### typedef自定义的数据类型
+可以使用 typedef 来为用户自定义的数据类型取一个新的名字。
+
+例如可以对结构体使用 typedef 来定义一个新的数据类型名字，然后使用这个新的数据类型来直接定义结构变量，如下：
 ``` 
 #include <stdio.h>
 #include <string.h>
@@ -59,7 +60,7 @@ int main( )
 - typedef 是由编译器执行解释的，#define 语句是由预编译器进行处理的。
 下面是 #define 的最简单的用法：
 
-实例
+
 ``` 
 #include <stdio.h>
  
